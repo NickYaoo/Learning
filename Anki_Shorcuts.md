@@ -8,6 +8,7 @@
 | Insert Cloze | CMD/CTRL + Shift + C |
 | Switch Flashcard Type | CMD/CTRL + N |
 | Edit Flashcards | E |
+| Image Occulsion | CMD/CTRL + SHIFT + O |
 
 
 ## Flashcard Review
