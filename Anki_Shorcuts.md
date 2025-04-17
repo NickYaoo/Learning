@@ -15,13 +15,16 @@
 | Good | 2 |
 | Easy | 3 | 
 | Flag Card | F | 
+| Reverse Card | Shift R |
+| Suspend Card | Shift S |
 
-## Navigation 
+## General + Navigation
 | Purpose | Shortcut |
 | :------- | :--------: | 
 | Home | H |
 | Go to Deck | D |
 | Go to Browser | B |
+| Sync | S |
 
 
 
