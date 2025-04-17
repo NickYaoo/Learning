@@ -28,7 +28,7 @@
 | Home | H |
 | Go to Deck | D |
 | Go to Browser | B |
-| Sync | S |
+| Sync | Y |
 
 
 
