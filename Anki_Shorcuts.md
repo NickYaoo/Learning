@@ -6,6 +6,7 @@
 | Add Card to Deck | CMD/CTRL Enter |
 | Switch from Front to Back | Tab or SHIFT + Tab |
 | Insert Cloze | CMD/CTRL + Shift + C |
+| Switch Flashcard Type | CMD/CTRL + N |
 
 
 ## Flashcard Review
