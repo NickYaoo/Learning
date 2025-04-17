@@ -7,6 +7,7 @@
 | Switch from Front to Back | Tab or SHIFT + Tab |
 | Insert Cloze | CMD/CTRL + Shift + C |
 | Switch Flashcard Type | CMD/CTRL + N |
+| Edit Flashcards | E |
 
 
 ## Flashcard Review
