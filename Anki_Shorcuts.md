@@ -5,6 +5,7 @@
 | Add New Card | A |
 | Add Card to Deck | CMD/CTRL Enter |
 | Switch from Front to Back | Tab or SHIFT + Tab |
+| Insert Cloze | CMD/CTRL + Shift + C |
 
 
 ## Flashcard Review
