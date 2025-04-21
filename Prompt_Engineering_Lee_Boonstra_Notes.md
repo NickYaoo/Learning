@@ -14,4 +14,9 @@ All Information is derived from
 ---
 
 ### Best Practices
-
+1. Simplicity
+2. Provide Examples
+3. Input and Output Specificity
+4. Positive Instructions over Constraints (Using Negatives like Don't, Not etc.)
+5. Control Max Token Lengths
+6. Consider Experimentation + Variations
