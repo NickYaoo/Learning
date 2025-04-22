@@ -33,5 +33,15 @@
 
 ## Settings
 1. New Cards
-   - Time Intervals (15, 1440, 8640)
+   - Time Intervals (15, 1440, 4320) min
+   - Graduating Interval (15 days)
+   - Show new Cards in Random Order
+   - Easy interval (60 days)
+2. Reviews
+   - Maximum Cards (9999)
+3. Lapses
+   - New Interval (70%)
+   - Leech Threshold (8)
+   - Tag ONLY
+   - Minimum Interval (2 days)
 
