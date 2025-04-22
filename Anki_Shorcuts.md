@@ -31,5 +31,7 @@
 | Sync | Y |
 
 
-
+## Settings
+1. New Cards
+   - Time Intervals (15, 1440, 8640)
 
