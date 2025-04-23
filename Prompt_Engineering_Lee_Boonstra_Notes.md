@@ -3,6 +3,15 @@ All Information is derived from
 
 ### LLM Output Settings
 
+#### Output Length (Tokens)
+  - More Tokens = More Computation, Energy Consumption, Higher Costs, Longer Response Time
+  - Does not necessarily reflect in shorter (in words) responses but rather stopping prediction after token limit is reached
+
+#### Sampling Controls
+  
+  Temperature (Degree of Randomness)
+  - 0 (greedy decoding) = deterministic
+    
 ---
 
 ### Prompting Techniques
