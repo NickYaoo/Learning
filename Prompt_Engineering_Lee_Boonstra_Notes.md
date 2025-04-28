@@ -34,3 +34,16 @@ All Information is derived from
 4. Positive Instructions over Constraints (Using Negatives like Don't, Not etc.)
 5. Control Max Token Lengths
 6. Consider Experimentation + Variations
+
+### Template for Documenting Prompts
+
+| Name | (Include Version) |
+|:----| :----|
+| Goal | Explanation of the Attempt |
+| Model | Name and Version |
+| Temperature | Token Limit |
+| Top-k | Top-P |
+| Prompt |  Indicate Changes |
+| Output | Document Exact Output |
+
+
