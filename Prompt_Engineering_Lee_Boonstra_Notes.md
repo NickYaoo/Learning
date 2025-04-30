@@ -13,7 +13,7 @@ All Information is derived from
   - 0 (greedy decoding) = deterministic = only highest probability token is selected (tiebreakers determined with encoded implementation)
   - Greater than 1  = random/"creative" = if high enough, all tokens become equally likely to be predicted
 
-  **Nucleaus Sampling**
+  **Nucleus Sampling**
   - Top K: Selects the top K most likely tokens
       - Higher ==> More creative and varied
       - Lower ==> More Factual (not necessarily correct)
