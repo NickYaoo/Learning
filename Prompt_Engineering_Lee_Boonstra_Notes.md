@@ -80,7 +80,7 @@ Role Prompting: Assigns specific character or identity
 - Prompting Technique used to improve reasoning by generating intermediate reasoning steps
 - Utilizes Simple Greedy Decoding
 - Use Case: Any task that can be solved by "Talking it Through"
-- Prompt Verbage Example: "Let's think step by step"
+- Prompt Verbiage Example: "Let's think step by step"
 
 Pros:
 - Low-Effort
@@ -93,7 +93,7 @@ Cons:
 
 
 **Self Consistency**
-- Combines Sampling and Majoirty Voting to generate diverse reasoning paths andpicks the most consistent answer
+- Combines Sampling and Majoirty Voting to generate diverse reasoning paths and picks the most consistent answer
 1. Generate Diverse Reasoning Paths
    - Set Temperature to value close to 1
    - Feed LLM Same Prompt Multiple Times
@@ -101,7 +101,7 @@ Cons:
 3. Pick most common Output
 
 **Tree of Thoughts (ToT)**
-- Generalization of CoT to allow LLM to explore multiple different reasoning paths simultaneously\
+- Generalization of CoT to allow LLM to explore multiple different reasoning paths simultaneously
 - Well-suited for complex tasks that require exploration of thought
 
 **ReAct (Reason & Act)**
