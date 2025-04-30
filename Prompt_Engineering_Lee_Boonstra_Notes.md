@@ -21,11 +21,83 @@ All Information is derived from
 
 ### Prompting Techniques
 
+**General/Zero Shot Prompting**
+- Model temperature should be set to low value (close to 0)
+- Zero Shot == No examples Provided
+
+** One-shot & Few-Shot Prompting**
+One-shot == Single Example
+Few-Shot == Multiple examples (Typically 3-5)
+
+Determining number of examples needed:
+1. Complexity of the Task
+2. Quality of Examples
+3. Capability of LLM
+
+Example Criteria:
+1. Diverse
+2. High Quality
+3. Well Written (Avoid Typos/mistakes)
+4. Include Edge Cases
+
+**System, Contextual, and Role Prompting**
+System Prompting: Overall Context + Purpose ==> Defining the "Big Picture"
+  - Define fundamental capabilities + overall purpose
+
+Contextual Prompting: Specific Details + Background Info ==> Understanding Nuances
+  - Immediate, task-specific info
+  - Dynamically Specific to Task
+  - Looking to Guide LLM
+
+Role Prompting: Assigns specific character or identity
+  - Frames output style, voice, personality
+
 ---
 
 ### Types of Prompting
-**ReAct (Reason & Act)**
 
+**Step-back Prompting**
+- Activates relevant background knowledge and reasoning before solving specific task
+- Use Case: Ask to Generate a List of Items based on a metric, feed its output to the next prompt that asks for an action performed on the fed in output
+
+1. First consider a general question related to the task
+2. Feed its answer into the prompt for the specific task
+
+**Chain of Thought (CoT)**
+- Prompting Technique used to improve reasoning by generating intermediate reasoning steps
+- Utilizes Simple Greedy Decoding
+- Use Case: Any task that can be solved by "Talking it Through"
+- Prompt Verbage Example: "Let's think step by step"
+
+Pros:
+- Low-Effort
+- Effective with off-the-shelf LLM (no fine-tuning needed)
+- Better robustness (less output performance drift between different models used)
+- Allows users to identify errors in reasoning to adjust/re-prompt
+
+Cons:
+- Involves more output tokens ==> Predictions cost more money and time
+
+
+**Self Consistency**
+- Combines Sampling and Majoirty Voting to generate diverse reasoning paths andpicks the most consistent answer
+1. Generate Diverse Reasoning Paths
+   - Set Temperature to value close to 1
+   - Feed LLM Same Prompt Multiple Times
+2. Extract Output
+3. Pick most common Output
+
+**Tree of Thoughts (ToT)**
+- Generalization of CoT to allow LLM to explore multiple different reasoning paths simultaneously\
+- Well-suited for complex tasks that require exploration of thought
+
+**ReAct (Reason & Act)**
+Combines reasoning and a thought-action loop.
+1. Reaons the Problem
+2. Generates Plan of Action
+3. Performs plan
+4. Observe Results
+5. Iterate until solution reached
 
 **Automatic Prompt Engineering (APE)**
 1. Generate Output Variants with a Prompt
