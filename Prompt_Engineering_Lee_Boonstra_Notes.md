@@ -27,13 +27,33 @@ All Information is derived from
 
 ---
 
-### Best Practices
-1. Simplicity
-2. Provide Examples
-3. Input and Output Specificity
-4. Positive Instructions over Constraints (Using Negatives like Don't, Not etc.)
+### General Best Practices
+1. Simplicity (concise + clear + easy)
+2. Provide Examples (effective teaching tool)
+3. Specify Input and Desired Output
+4. Positive Instructions over Constraints (Avoid Negatives like Don't, Not etc.)
+   - Encourage flexibility and creativity within defined boundaries
+   - Tell what to do not what NOT to do
+   - Use Constraints for safety, clarity, or specific requirements
 5. Control Max Token Lengths
+    - Directly Specify Token Length OR request specific length of response
 6. Consider Experimentation + Variations
+    - Input Format + Writing Styles (Question, Statement, Instruction)
+    - Return Output as JSON, XML etc.
+
+**CoT Best Practices**
+1. Set Temperature to 0
+2. Separate Reasoning and Answer
+
+--- 
+
+### Commonly Used Verbs that Describe Actions:
+
+Act, Analyze, Categorize, Classify, Contrast, Compare, Create, Describe, Define, Evaluate, Extract, Find, Generate,
+
+Identify, List, Measure, Organize, Parse, Pick, Predict, Provide, Rank, Recommend, Return, Retrieve, Rewrite,
+
+Select, Show, Sort, Summarize, Translate, Write
 
 ### Template for Documenting Prompts
 
