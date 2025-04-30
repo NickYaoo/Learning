@@ -24,7 +24,19 @@ All Information is derived from
 ---
 
 ### Types of Prompting
+**ReAct (Reason & Act)**
 
+
+**Automatic Prompt Engineering (APE)**
+1. Generate Output Variants with a Prompt
+2. Evaluate instructions based on a metric like BLEU or ROUGE
+3. Select instruction with highest score
+
+**Code Prompting**
+1. Write/Compose
+2. Explain Code
+3. Translate into another Language
+4. Debug + Review
 ---
 
 ### General Best Practices
