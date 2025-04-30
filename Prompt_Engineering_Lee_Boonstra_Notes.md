@@ -9,14 +9,25 @@ All Information is derived from
 
 #### Sampling Controls
   
-  Temperature (Degree of Randomness)
+  **Temperature (Degree of Randomness)**
   - 0 (greedy decoding) = deterministic = only highest probability token is selected (tiebreakers determined with encoded implementation)
   - Greater than 1  = random/"creative" = if high enough, all tokens become equally likely to be predicted
 
-  Nucleaus Sampling
-  - Top K:
-  - Top P:
-    
+  **Nucleaus Sampling**
+  - Top K: Selects the top K most likely tokens
+      - Higher ==> More creative and varied
+      - Lower ==> More Factual (not necessarily correct)
+      - Top-K = 1 ==> Greedy Decoding
+  - Top P: Selects top tokens whose cumulative probability does not exceed P
+    - 0 == Greedy Decoding
+    - 1 == All tokens in LLM
+
+   **Understanding Combinations**
+   - If temperature = 0 ==> top-K and top-P becomes irrelevant
+   - If top-K = 1 ==> temperature and top-P is irrelevant
+   - If top-P = 0 ==> temperature and top-K is irrelevant
+   - If your task has 1 right/correct answer - set temperature to 0
+   
 ---
 
 ### Prompting Techniques
@@ -43,6 +54,7 @@ Example Criteria:
 **System, Contextual, and Role Prompting**
 System Prompting: Overall Context + Purpose ==> Defining the "Big Picture"
   - Define fundamental capabilities + overall purpose
+  - Useful for safety and toxicity
 
 Contextual Prompting: Specific Details + Background Info ==> Understanding Nuances
   - Immediate, task-specific info
@@ -51,6 +63,7 @@ Contextual Prompting: Specific Details + Background Info ==> Understanding Nuanc
 
 Role Prompting: Assigns specific character or identity
   - Frames output style, voice, personality
+  - Common Styles: Confrontational, Descriptive, Direct, Formal, Humorous, Influential, Informal, Inspirational, Persuasive
 
 ---
 
